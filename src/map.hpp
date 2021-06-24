@@ -23,9 +23,6 @@ public:
                const Allocator& alloc = Allocator())
     : std::map<K, V, Compare, Allocator>(compare, alloc) { }
 
-  Map(const Map& other)
-    : std::map<K, V, Compare, Allocator>(other) { }
-
   template<class InputIt>
   Map(InputIt first, InputIt last,
       const Compare& compare = Compare(),

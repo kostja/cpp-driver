@@ -32,8 +32,6 @@ public:
         const Allocator& alloc = Allocator())
     : std::deque<T, Allocator>(first, last, alloc) { }
 
-  Deque(const Deque& other)
-    : std::deque<T, Allocator>(other) { }
 };
 
 } // namespace cass
